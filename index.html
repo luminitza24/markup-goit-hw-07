@@ -9,6 +9,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./sass/components/header.css" />
     <link rel="portofolio" href="portofolio.html" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -65,12 +66,12 @@
             <a href="#" class="form-link">Terms and Conditions</a>
             <svg><use href="images/form-icons.svg#icon-vector"></use></svg>
           </label>
-          <button class="form-button" type="submit">Send</button>
+          <button class="button" type="submit">Send</button>
         </div>
       </div>
     </div>
-    <div class="container">
-      <header class="page-header">
+    <header class="page-section">
+      <div class="container">
         <a class="logo" href="/"><span class="web_logo">Web</span>Studio</a>
         <nav>
           <ul class="nav-grid">
@@ -101,22 +102,22 @@
             >
           </li>
         </ul>
-      </header>
-    </div>
+      </div>
+    </header>
     <main>
       <section class="heading-section">
-        <div class="container">
+        <div class="container-flex">
           <h1 class="heading">EFFECTIVE SOLUTIONS FOR <br />YOUR BUSINESS</h1>
           <div class="section-inner">
-            <button class="request-button" type="button" data-modal-open>
+            <button class="button" type="button" data-modal-open>
               Request our service
             </button>
           </div>
         </div>
       </section>
-      <section class="working-item">
+      <section class="page-section">
         <div class="container">
-          <ul class="grid--col-4">
+          <ul class="grid--4">
             <li class="grid_item">
               <svg class="grid_icon">
                 <use href="images/icons.svg#icon-antenna"></use>
@@ -162,10 +163,10 @@
           </ul>
         </div>
       </section>
-      <section class="image-section">
+      <section class="page-section">
         <div class="container">
           <h2 class="section-heading">What we do</h2>
-          <ul class="grid--col-4">
+          <ul class="grid--3">
             <li class="grid_item">
               <img
                 src="images/box1.jpg"
@@ -199,10 +200,10 @@
           </ul>
         </div>
       </section>
-      <section class="our-team">
+      <section class="page-section">
         <div class="container">
           <h2 class="section-heading">Our team</h2>
-          <ul class="grid--col-4">
+          <ul class="grid--4">
             <li class="grid_item">
               <img
                 src="images/team1.jpg"
@@ -342,7 +343,7 @@
           </ul>
         </div>
       </section>
-      <section class="customers">
+      <section class="page-section">
         <div class="container">
           <h2 class="section-heading">Regular Customers</h2>
           <ul class="grid--col-6">
@@ -457,7 +458,7 @@
             name="e-mail"
             placeholder="E-mail"
           />
-          <button class="form-button" type="submit">
+          <button class="button" type="submit">
             Subscribe
             <svg class="e-mail-icon">
               <use href="images/form-icons.svg#icon-send"></use>

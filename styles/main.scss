@@ -1,4 +1,14 @@
 @import "../sass/utils/var.scss";
+@import "../sass/components/header.scss";
+@import "../sass/components/body.scss";
+
+* {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+}
 body {
   font-family: Roboto;
   font-weight: 400;
@@ -26,15 +36,15 @@ body {
   right: 8px;
   cursor: pointer;
   background-color: $white-color;
-  .inner-modal {
-    border-color: $brand-color;
-    width: 528px;
-    height: 581px;
-    background-color: $white-color;
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
-      0 1px 1px 0 rgba(0, 0, 0, 0.14);
-    position: relative;
-  }
+}
+.inner-modal {
+  border-color: $brand-color;
+  width: 528px;
+  height: 581px;
+  background-color: $white-color;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0 1px 1px 0 rgba(0, 0, 0, 0.14);
+  position: relative;
 }
 .is-hidden {
   visibility: hidden;
@@ -64,7 +74,7 @@ body {
   background-color: rgba(33, 150, 243, 0.9);
   transform: translatey(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  .overlay_item {
+  &.overlay_item {
     color: $white-color;
     font-weight: 400;
     font-size: 18px;
@@ -72,27 +82,45 @@ body {
     padding: 63px 24px 94px;
   }
 }
-.nav-grid {
-  list-style-type: none;
-  text-decoration: none;
-  color: $paragraph-color;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  font-style: normal;
-  display: flex;
-}
 .container {
   max-width: 1200px;
   display: flex;
   margin: 0, auto;
 }
-@each $nrcol in 3, 4, 6 {
-  .grid--col-#{$nrcol} {
-    .grid_item {
-      $nrgap: $nrcol-1;
-      $totalgap: $nrgap * $gap;
-      flex-basis: calc((100%-#{$totalgap} px) /#{$nrcol});
-    }
-  }
+.heading-section {
+  max-width: 1600px;
+  margin: 0, auto;
+  background-image: url("../images/background.jpg"),
+    url("../images/Img\ Overlay.jpg"), url("../images/background.jpg");
+}
+.heading {
+  font-weight: 900px;
+  color: $white-color;
+  font-size: 44px;
+  line-height: 1.36;
+  display: inline-block;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.button {
+  color: $white-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.85;
+  background-color: $brand-color;
+  border-color: $brand-color;
+  border-radius: 4px;
+  display: inline-block;
+}
+.page-section {
+  max-width: 1600px;
+  margin: 0, auto;
+}
+.container-flex {
+  display: flex;
+  margin: 0, auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 200px, 0;
 }
