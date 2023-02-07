@@ -1,0 +1,58 @@
+.box :hover .overlay,
+.product-item:hover .overlay {
+  transform: translatey(0);
+}
+
+.box {
+  margin-left: auto;
+  margin-right: auto;
+  width: 370px;
+  height: 294px;
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: 1px;
+  text-align: left;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translatey(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &_item {
+    color: $white-color;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;
+    padding: 63px 24px 94px;
+  }
+}
+.subtitle {
+  border-bottom: 1px solid #eeee;
+  border-left: 1px solid #eeee;
+  border-right: 1px solid #eeee;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  &_name {
+    color: $writing-color;
+    font-style: bold;
+    font-size: 18px;
+    line-height: 2;
+    padding-top: 20px;
+    margin-bottom: 4px;
+  }
+  &_item {
+    color: $paragraph-color;
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 1.17;
+    margin-bottom: 16px;
+    text-align: left;
+  }
+}

@@ -1,0 +1,19 @@
+@import "../utils/vars";
+.footer {
+  background-color: $bg-color;
+  display: flex;
+}
+.social-title {
+  color: $white-color;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700px;
+  font-size: 14px;
+  line-height: 16.41px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.icon_grid--footer {
+  fill: var(--white-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

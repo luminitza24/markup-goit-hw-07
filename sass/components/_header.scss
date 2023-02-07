@@ -1,118 +1,113 @@
+@import "../utils/vars";
+
 .heading {
   font-weight: 900px;
-  color: #ffffff;
+  color: $white-color;
   font-size: 44px;
   line-height: 1.36;
   display: inline-block;
   margin-bottom: 30px;
   text-align: center;
+  padding-top: 200px;
+  &__button {
+    margin-bottom: 200px;
+  }
 }
-
 .button {
   width: 200px;
   height: 50px;
-  color: #ffffff;
+  color: $white-color;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.85;
-  background-color: rgb(33, 150, 243);
-  border-color: rgb(33, 150, 243);
+  background-color: $brand-color;
+  border-color: $brand-color;
   border-radius: 4px;
   display: inline-block;
   position: relative;
 }
-
 .button_icon {
   width: 24px;
   height: 24px;
   position: absolute;
   top: 10px;
   right: 24px;
-  fill: #ffffff;
+  fill: $white-color;
 }
-
 .page-section {
   max-width: 1600px;
-  margin: 0, auto;
 }
-
 .container-flex {
   display: flex;
   margin: 0, auto;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 200px 0;
 }
-
 .logo {
   text-decoration: none;
-  color: #212121;
+  color: $writing-color;
   font-weight: 700;
   font-family: Raleway;
   font-size: 26px;
   line-height: 1, 17;
-  padding: 24px 0 0 25px;
   margin-right: 93px;
+  padding-top: 24px;
 }
-
 .web_logo {
   text-decoration: none;
-  color: rgb(33, 150, 243);
+  color: $brand-color;
   font-family: raleway;
   font-weight: 700px;
   font-size: 26px;
   line-height: 1.38;
 }
-
 .nav-grid {
   list-style-type: none;
   display: flex;
   gap: 50px;
   padding: 24px 0 0 25px;
+  .nav-grid_item {
+    display: inline-block;
+  }
 }
-.nav-grid .nav-grid_item {
-  display: inline-block;
-}
-
 .nav-link {
-  color: #212121;
+  color: $writing-color;
   font-style: normal;
   font-weight: 500px;
   font-size: 14px;
   line-height: 1.17;
   text-decoration: none;
+  &:hover,
+  &:active,
+  &:focus {
+    color: $brand-color;
+  }
 }
-.nav-link:hover, .nav-link:active, .nav-link:focus {
-  color: rgb(33, 150, 243);
-}
-
 .contact-list {
   list-style-type: none;
   padding: 32px 0;
   margin-left: auto;
+  .contact-list_item {
+    display: inline-block;
+  }
 }
-.contact-list .contact-list_item {
-  display: inline-block;
-}
-
 .link {
   text-decoration: none;
-  color: #757575;
+  color: $paragraph-color;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   font-style: normal;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $brand-color;
+    cursor: pointer;
+    text-decoration: underline 2px $brand-color;
+    transition-property: cursor, text-decoration;
+    transition-duration: 250ms;
+    transition-delay: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
-.link:hover, .link:focus, .link:active {
-  color: rgb(33, 150, 243);
-  cursor: pointer;
-  -webkit-text-decoration: underline 2px rgb(33, 150, 243);
-          text-decoration: underline 2px rgb(33, 150, 243);
-  transition-property: cursor, -webkit-text-decoration;
-  transition-property: cursor, text-decoration;
-  transition-property: cursor, text-decoration, -webkit-text-decoration;
-  transition-duration: 250ms;
-  transition-delay: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}/*# sourceMappingURL=header.css.map */
