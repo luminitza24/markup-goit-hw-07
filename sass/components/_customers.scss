@@ -2,3 +2,9 @@
 .company-link {
   color: $paragraph-color;
 }
+.company-link {
+  color: $paragraph-color;
+  .company-icon {
+    fill: $paragraph-color;
+  }
+}
