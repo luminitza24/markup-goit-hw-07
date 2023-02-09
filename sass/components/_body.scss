@@ -14,7 +14,7 @@
   margin-top: 94px;
   display: inline-block;
 }
-.grid_item .team--grid_item {
+.team--grid .grid_item {
   box-shadow: 1px 0 2px rgba(0, 0, 0, 0.2), 1px 0 1px rgba(0, 0, 0, 0.14),
     3px 0 1px rgba(0, 0, 0, 0.12);
 }
@@ -52,6 +52,8 @@
 .grid_icon {
   width: 70px;
   height: 70px;
+  margin-bottom: 30px;
+  align-self: center;
 }
 .grid_title {
   color: $writing-color;

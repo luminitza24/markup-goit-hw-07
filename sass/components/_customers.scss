@@ -1,10 +1,22 @@
 @import "../utils/vars";
 .company-link {
-  color: $paragraph-color;
-}
-.company-link {
-  color: $paragraph-color;
-  .company-icon {
-    fill: $paragraph-color;
+  height: 92px;
+  width: 170px;
+  border: 1px solid $paragraph-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:focus,
+  &:hover {
+    border: 1px solid $brand-color;
   }
+}
+.company_icon {
+  fill: $paragraph-color;
+  &:hover {
+    fill: $brand-color;
+  }
+}
+.grid--col-6 {
+  margin-bottom: 94px;
 }
